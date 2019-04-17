@@ -15,7 +15,7 @@
 ```json
 {
     "require": {
-       "chocoboxxf/yii2-qiniu-sdk": "dev-master"
+       "xingkoo/yii2-qiniu-sdk": "dev-master"
     }
 }
 ```
@@ -29,7 +29,7 @@
 'components' => [
   .....
   'qiniu' => [ 
-      'class' => 'chocoboxxf\Qiniu\Qiniu',
+      'class' => 'xingkoo\Qiniu\Qiniu',
       'accessKey' => 'Access Key',
       'secretKey' => 'Secret Key',
       'domain' => '七牛域名',
@@ -46,7 +46,7 @@ $result = Yii::$app->qiniu->putFile('img/test.jpg', __DIR__.'/test.jpg');
 ```php
 // 局部调用
 $qiniu = Yii::createObject([
-    'class' => 'chocoboxxf\Qiniu\Qiniu',
+    'class' => 'xingkoo\Qiniu\Qiniu',
     'accessKey' => 'Access Key',
     'secretKey' => 'Secret Key',
     'domain' => '七牛域名',
@@ -102,6 +102,9 @@ foreach ($urlMaps as $fileUrl => $downloadUrl) {
     // TODO
 }
 ```
+````php
+$download = Yii::$app->qiniu->download($fileName);
+````
 
 获取上传凭证
 
