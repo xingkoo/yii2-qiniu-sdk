@@ -149,7 +149,7 @@ class Qiniu extends Component
         }
         $result = [];
         foreach ($fileNameList as $fileName) {
-            $result[$fileName] = $this->auth->privateDownloadUrl($domain.$fileName);
+            $result[$fileName] = $this->auth->privateDownloadUrl($this->domain.$fileName);
         }
         // 仅返回下载链接
         if (!$realDownload) {
@@ -173,7 +173,7 @@ class Qiniu extends Component
     * 获取单个文件的下载地址
     */
     public function download($fileName){
-        return $this->auth->privateDownloadUrl($domain.$fileName);
+        return $this->auth->privateDownloadUrl($this->domain.$fileName);
     }
     /**
      * 获取上传凭证
