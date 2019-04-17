@@ -169,7 +169,12 @@ class Qiniu extends Component
         }
         return $result;
     }
-
+    /**
+    * 获取单个文件的下载地址
+    */
+    public function download($fileName){
+        return $this->auth->privateDownloadUrl($fileName);
+    }
     /**
      * 获取上传凭证
      * @param string|null $bucket
