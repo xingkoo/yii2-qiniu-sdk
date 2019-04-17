@@ -3,18 +3,18 @@
   "type": "yii2-extension",
   "description": "Qiniu API for Yii 2.0",
   "keywords": ["yii2", "qiniu", "upload", "sdk"],
-  "homepage": "https://github.com/chocoboxxf/yii2-qiniu-sdk",
+  "homepage": "https://github.com/xingkoo/yii2-qiniu-sdk",
   "license": "MIT",
   "support": {
-    "issues": "https://github.com/chocoboxxf/yii2-qiniu-sdk/issues",
-    "wiki": "https://github.com/chocoboxxf/yii2-qiniu-sdk/wiki",
-    "source": "https://github.com/chocoboxxf/yii2-qiniu-sdk"
+    "issues": "https://github.com/xingkoo/yii2-qiniu-sdk/issues",
+    "wiki": "https://github.com/xingkoo/yii2-qiniu-sdk/wiki",
+    "source": "https://github.com/xingkoo/yii2-qiniu-sdk"
   },
   "authors": [
     {
-      "name": "chocoboxxf",
-      "email": "neil.xuxf@gmail.com",
-      "homepage": "https://github.com/chocoboxxf",
+      "name": "xingkoo",
+      "email": "xingkoo@gmail.com",
+      "homepage": "https://github.com/xingkoo",
       "role": "Developer"
     }
   ],
@@ -28,12 +28,12 @@
   },
   "autoload": {
     "psr-4": {
-      "chocoboxxf\\Qiniu\\": "src/"
+      "xingkoo\\Qiniu\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "chocoboxxf\\Qiniu\\Tests\\": "tests/"
+      "xingkoo\\Qiniu\\Tests\\": "tests/"
     }
   }
 }
