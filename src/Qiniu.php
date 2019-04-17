@@ -1,11 +1,11 @@
 <?php
 /**
  * 七牛云SDK
- * User: chocoboxxf
+ * User: xingkoo
  * Date: 15/12/5
  * Time: 下午4:32
  */
-namespace chocoboxxf\Qiniu;
+namespace xingkoo\Qiniu;
 
 use Yii;
 use yii\base\Component;
