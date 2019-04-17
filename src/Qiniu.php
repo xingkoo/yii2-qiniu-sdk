@@ -23,7 +23,7 @@ class Qiniu extends Component
 
     public $secretKey; // Secret Key
 
-    public $domain; // 七牛域名
+    public $domain; // 七牛域名，注意：注意：注意：获取下载链接时，需要用到带域名的下载地址。
 
     public $bucket; // 使用的空间
 
@@ -149,7 +149,7 @@ class Qiniu extends Component
         }
         $result = [];
         foreach ($fileNameList as $fileName) {
-            $result[$fileName] = $this->auth->privateDownloadUrl($fileName);
+            $result[$fileName] = $this->auth->privateDownloadUrl($domain.$fileName);
         }
         // 仅返回下载链接
         if (!$realDownload) {
@@ -173,7 +173,7 @@ class Qiniu extends Component
     * 获取单个文件的下载地址
     */
     public function download($fileName){
-        return $this->auth->privateDownloadUrl($fileName);
+        return $this->auth->privateDownloadUrl($domain.$fileName);
     }
     /**
      * 获取上传凭证
