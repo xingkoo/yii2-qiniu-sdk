@@ -1,5 +1,5 @@
 {
-  "name": "chocoboxxf/yii2-qiniu-sdk",
+  "name": "xingkoo/yii2-qiniu-sdk",
   "type": "yii2-extension",
   "description": "Qiniu API for Yii 2.0",
   "keywords": ["yii2", "qiniu", "upload", "sdk"],
