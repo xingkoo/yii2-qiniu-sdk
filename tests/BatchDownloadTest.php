@@ -5,7 +5,7 @@
  * Date: 16/3/7
  * Time: 下午10:13
  */
-namespace chocoboxxf\Qiniu\Tests;
+namespace xingkoo\Qiniu\Tests;
 
 use Yii;
 
@@ -14,7 +14,7 @@ class BatchDownloadTest extends \PHPUnit_Framework_TestCase
     public function testDownload()
     {
         $qiniu = Yii::createObject([
-            'class' => 'chocoboxxf\Qiniu\Qiniu',
+            'class' => 'xingkoo\Qiniu\Qiniu',
             'accessKey' => 'Access Key',
             'secretKey' => 'Secret Key',
             'domain' => '七牛域名',
